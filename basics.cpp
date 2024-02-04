@@ -40,7 +40,28 @@ int main(){
 
 	// ASCII print 
 	char aChar = 65, bChar = 66, cChar = 67;
-	cout << aChar << bChar << cChar;
+	cout << aChar << bChar << cChar << "\n";
+	
+	// Strings
+	string name1 = "Milad";
+	string lastname1 = "Dehghan";
+	cout << name1.append(lastname1) << "\n";
+
+	cout << "lenght of the name sting:" << name1.size() << "\n";
+	
+	//Alos you can set index as well: name1[0] = 'x'; 
+	cout << "get char by string index (name1[0]):" << name1[0] << "\n";
+	
+	// User input string
+	// getline (cin, fullName); read line for example can take full name
+	string fullNamex;
+	
+	cout << "Enter you x full name:\n";
+
+	getline (cin, fullNamex);
+
+	cout << "the x full name is:" << fullNamex;
+
 	return 0;
 }
 
